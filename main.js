@@ -4,10 +4,11 @@ for (let button of document.querySelectorAll(".radio-button")){
 }
 document.querySelector("#help").addEventListener('click', () => {
     const helpList = document.querySelector("#helpList");
-    if (helpList.hidden){
-        helpList.hidden = false;
+    if (helpList.classList.length){
+        console.log(helpList.classList)
+        helpList.classList.remove("invisible");
     }else{
-        helpList.hidden = true;
+        helpList.classList.add("invisible");
     }
 })
 

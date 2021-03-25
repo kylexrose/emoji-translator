@@ -7,8 +7,15 @@
         <link href="./emoji.png" rel="shortcut icon" type="image/jpg"/>
     </head>
     <body>
+        <a href="#" id="help">Help</a><br>
+        <ul class="invisible" id="helpList">
+            <li>Encode will assign an Emoji to every character you type.</li>
+            <li>Translate will replace any word you type with a corresponding Emoji.</li>
+            <li>Madlib will replace all category words with a randomized Emoji of that category.</li>
+            <li>Search will search the Emoji database for a match with the text that you type.</li>
+            <li>Random will randomly select one of the previous four translation options for your text.</li>
+        </ul>
         <input type="text" id="translator-input">
-        <button id="submit-button">Submit</button>
         <form>
             <p>How would you like to translate?</p>
             <div class="radio-button-section">
